@@ -7,7 +7,7 @@ const token = process.env.TOKEN;
 const fs = require('node:fs');
 const path = require('node:path');
 
-const client = new Client({ intents: GatewayIntentBits.Guilds });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates] });
 
 client.commands = new Collection();
 

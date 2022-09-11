@@ -11,11 +11,11 @@ module.exports = {
 		client.discordTogether = new DiscordTogether(client);
 		if (message.member.voice.channel) {
 			client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'youtube').then(async invite => {
-				return message.channel.send(`${invite.code}`);
+				return message.reply({ content: `${invite.code}` });
 			});
 		}
 		else {
-			return message.channel.send('Debes estar en un canal de voz');
+			return message.reply({ content: 'Debes estar en un canal de voz', ephemeral: true });
 		}
 	},
 };

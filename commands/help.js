@@ -24,13 +24,11 @@ module.exports = {
 			commands.push(newCommand);
 		}
 
-		if (interaction.member.roles.cache.some(role => role.name === 'Owner')) {
-			const help = {
-				color: 0xFFFFFF,
-				title: 'Comandos',
-				fields: commands,
-			};
-			await interaction.reply({ embeds: [help] });
-		}
+		const help = {
+			color: 0xFFFFFF,
+			title: 'Comandos',
+			fields: commands,
+		};
+		await interaction.reply({ embeds: [help] });
 	},
 };
