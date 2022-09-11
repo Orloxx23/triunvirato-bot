@@ -30,7 +30,7 @@
 - [x] Random memes
 - [x] Watch together
 - [x] Help
-- [ ] Block voice channel
+- [ ] Block voice channel - Bug
 
 
 ## Environment Variables
