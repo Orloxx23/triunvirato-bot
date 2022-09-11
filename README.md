@@ -26,10 +26,10 @@
 
 ## Features
 
-- Prune
-- Random memes
-- Watch together
-- Help
+- [x] Prune
+- [x] Random memes
+- [x] Watch together
+- [x] Help
 
 
 ## Environment Variables
