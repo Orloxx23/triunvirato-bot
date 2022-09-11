@@ -23,3 +23,26 @@
 </div>
 
 ###
+
+## Features
+
+- Prune
+- Random memes
+- Watch together
+- Help
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`DISCORD_TOKEN`
+
+`CLIENT_ID`
+
+`GUILD_ID`
+
+
+## Authors
+
+- [@Orloxx23](https://github.com/Orloxx23)
