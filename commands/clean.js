@@ -3,7 +3,7 @@ const { SlashCommandBuilder } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('limpiar')
-		.setDescription('Elimina hasta 99 mensajes.')
+		.setDescription('Elimina hasta 99 mensajes. (Solo admins)')
 		.addIntegerOption(option => option.setName('cantidad').setDescription('Número de mensajes a eliminar (1-99)').setRequired(true)),
 	async execute(interaction) {
 		if (interaction.member.roles.cache.some(role => role.name === 'Owner')) {

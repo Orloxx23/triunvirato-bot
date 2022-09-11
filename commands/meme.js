@@ -19,14 +19,14 @@ module.exports = {
 				return await interaction.reply('No encontre memes :(');
 			}
 			else {
-				const exampleEmbed = {
+				const meme = {
 					color: 0xFFFFFF,
 					title: post.title,
 					image: {
 						url: post.url,
 					},
 				};
-				await interaction.reply({ embeds: [exampleEmbed] });
+				await interaction.reply({ embeds: [meme] });
 			}
 		});
 		// await do something;
