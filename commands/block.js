@@ -21,7 +21,7 @@ module.exports = {
 					const role = res;
 
 					channel.edit({
-						permissionOverwrites: [{ id: everyone.id, deny: '0x0000000000100000' }, { id: role.id, allow: '0x0000000000100000' }],
+						permissionOverwrites: [{ id: everyone.id, deny: '0x0000000000100000' }, { id: role.id, allow: '0x0000000000100000' }, { id: role.id, allow: '0x0000000002000000' }],
 					}).then(channel.members.map(member => member.roles.add(role)));
 				});
 
@@ -29,7 +29,7 @@ module.exports = {
 			}
 			else {
 				channel.edit({
-					permissionOverwrites: [{ id: everyone.id, allow: '0x0000000000100000' }],
+					permissionOverwrites: [{ id: everyone.id, allow: '0x0000000000100000' }, { id: everyone.id, allow: '0x0000000002000000' }],
 				}).then(() => {
 					const role = interaction.guild.roles.cache.find(r => r.name === '🔒');
 					if (role) role.delete();
