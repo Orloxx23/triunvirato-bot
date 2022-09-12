@@ -25,7 +25,7 @@ module.exports = {
 					}).then(channel.members.map(member => member.roles.add(role)));
 				});
 
-				return await interaction.reply({ content: `El canal de voz "${interaction.member.voice.channel.name}" ha sido bloqueado 🔒`, ephemeral: true });
+				return await interaction.reply({ content: `El canal de voz <#${interaction.member.voice.channel.id}> ha sido bloqueado 🔒`, ephemeral: true });
 			}
 			else {
 				channel.edit({
@@ -35,7 +35,7 @@ module.exports = {
 					if (role) role.delete();
 
 				});
-				return await interaction.reply({ content: `El canal de voz "${interaction.member.voice.channel.name}" ha sido desbloqueado 🔓`, ephemeral: true });
+				return await interaction.reply({ content: `El canal de voz <#${interaction.member.voice.channel.id}> ha sido desbloqueado 🔓`, ephemeral: true });
 			}
 		}
 		else {
