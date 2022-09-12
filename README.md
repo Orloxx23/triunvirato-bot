@@ -25,8 +25,9 @@
 ###
 
 ## Features
+# Commands
 
-- [x] Prune
+- [x] Delete messages
 - [x] Random memes
 - [x] Watch together
 - [x] Help
