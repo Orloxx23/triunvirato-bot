@@ -114,6 +114,12 @@ client.distube
 	.on('searchNoResult', (message, query) =>
 		message.channel.send(`❌ | No result found for \`${query}\`!`),
 	)
-	.on('finish', queue => queue.textChannel.send('Finished!'));
+	.on('finish', queue => {
+		const finishEmbed = new EmbedBuilder()
+			.setColor(0xFFFFFF)
+			.setTitle('No hay más canciones en la cola')
+			.setTimestamp();
+		queue.textChannel.send({ embeds: [finishEmbed] });
+	});
 
 client.login(token);
