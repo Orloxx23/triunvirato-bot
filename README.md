@@ -32,6 +32,7 @@
 - [x] Watch together
 - [x] Help
 - [x] Block voice channel
+- [ ] Music
 
 
 ## Environment Variables
