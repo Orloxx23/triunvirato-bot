@@ -129,5 +129,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-#templates
+# templates
 command-template.js
+
+# recycling
+recycling/
