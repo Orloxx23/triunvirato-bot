@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('jugemos')
+		.setName('juguemos')
 		.setDescription('Crea un invitación para tu canal de voz.'),
 	async execute(interaction) {
 		if (interaction.member.voice.channel) {
